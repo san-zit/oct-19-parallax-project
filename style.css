@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 50vh;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.321);
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+/* top menu */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo:hover {
+  transform: scale(1.4);
+  transition: all 0.5s;
+  animation: rotate-logo 2s linear infinite;
+}
+
+@keyframes rotate-logo {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+.top-menu {
+  background-color: black;
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 999999999;
+}
+.top-menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.top-menu ul li:hover {
+  transition: all 0.3s;
+  color: yellow;
+  transform: translateY(-5px);
+}
+
+.scroll {
+  min-height: 200vh;
+}
+
+/* Utility class */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* parallax */
+.content {
+  padding: 1rem 2rem;
+}
+
+.img1 {
+  height: 60vh;
+  background: url(./assets/img/im1.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  height: 60vh;
+  background: url(./assets/img/img2.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img3 {
+  height: 60vh;
+  background: url(./assets/img/img3.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img4 {
+  height: 60vh;
+  background: url(./assets/img/img4.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.084);
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  letter-spacing: 0.6rem;
+}
+
+footer {
+  padding: 3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
